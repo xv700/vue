@@ -329,7 +329,7 @@ export function once (fn: Function): Function {
   return function () {
     if (!called) {
       called = true
-      fn.apply(this, arguments)
+      fn.apply(null, arguments)
     }
   }
 }
